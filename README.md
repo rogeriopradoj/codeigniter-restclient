@@ -24,3 +24,10 @@ CodeIgniter-REST Client is a CodeIgniter library which makes it easy to do use R
 	$tweets = $this->rest->get('statuses/user_timeline/'.$username.'.xml');
 
 This is clearly a VERY simple example and more can much more can be done with it. Take a look at the code to see about things like api_key() and other post/put/delete methods.
+
+## Autoloading
+You can have CodeIgniter Autoload this spark, and the associated library by adding it to the `application/config/autoload.php` file:
+
+``` php
+$autoload['sparks'] = array('codeigniter-rest');
+```
